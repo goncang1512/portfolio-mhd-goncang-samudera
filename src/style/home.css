@@ -1,0 +1,147 @@
+.home-page {
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.home-right {
+  background-color: #f9f9f9;
+}
+
+/* Home Left */
+
+/* Home Right */
+.foto-profil {
+  margin: 100px 50px 50px 50px;
+  width: 80%;
+  height: 85%;
+  mask-image: url("../../public/assets/svg/42879.svg");
+  mask-size: 85%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+/* Home page teks animation */
+.container-teks {
+  padding: 10px 50px;
+}
+
+.brand-name {
+  color: white;
+  width: 450px;
+}
+
+.teks-name {
+  font-size: 20px;
+  font-weight: 600;
+  min-width: 280px;
+  color: white;
+  width: 450px;
+}
+
+.teks-name span {
+  position: relative;
+}
+
+.teks-name span::before {
+  content: "developer";
+  color: #147efb;
+  animation: words 25s infinite;
+}
+
+.teks-name span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 105%;
+  background-color: #f9f9f9;
+  border-left: 2px solid #000;
+  right: -8px;
+  animation: cursor 0.7s infinite, typing 25s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #fff;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "programmer";
+  }
+  21%,
+  40% {
+    content: "front-end";
+  }
+  41%,
+  60% {
+    content: "web development ";
+  }
+  61%,
+  80% {
+    content: "developer ";
+  }
+  81%,
+  100% {
+    content: "gamer";
+  }
+}
+
+@keyframes typing {
+  10%,
+  14%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+/* Sosmed */
+.sosmed-home a img {
+  filter: grayscale(100%) brightness(70%);
+  cursor: pointer;
+}
+
+.sosmed-home a img:hover {
+  filter: none;
+}
+
+.download-button {
+  transition: 0.3s all ease;
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  .home-left {
+    width: 100vw;
+    height: 100px;
+    padding: 50px 20px;
+  }
+
+  .container-teks {
+    padding: 0;
+  }
+}

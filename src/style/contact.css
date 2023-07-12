@@ -1,0 +1,73 @@
+.contact-body {
+  border: 1px solid white;
+  height: 100vh;
+  background-color: white;
+}
+
+.card-body-container {
+  margin: 9rem 10rem 7rem 10rem;
+}
+
+.card-container {
+  display: flex;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* card bagian kanan */
+
+input,
+textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #00b4cf;
+}
+
+textarea {
+  height: 100px;
+  max-height: 180px;
+}
+
+.left {
+  background-color: #f9f9f9;
+  padding: 25px;
+}
+.right {
+  padding: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-body {
+    height: 100%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body-container {
+    margin: 60px 0px 0px 0px;
+  }
+
+  .left {
+    order: 2;
+  }
+  .right {
+    order: 1;
+  }
+}

@@ -1,0 +1,90 @@
+.project-page {
+  background-color: #f9f9f9;
+}
+
+/* Project */
+.icon-skill {
+  filter: grayscale(100%) brightness(70%);
+  width: 40px;
+  cursor: pointer;
+}
+
+.icon-skill:hover {
+  filter: none;
+  object-fit: cover;
+}
+
+.tech-skill {
+  padding: 20px 190px 20px 190px;
+}
+
+.ket-project {
+  transform: translateX(-125%);
+  top: 0;
+  height: 100%;
+  transition: 0.5s all ease;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  width: 50%;
+  padding: 10px 10px 10px 75px;
+}
+
+.project-section {
+  padding: 20px 190px 20px 190px;
+}
+
+.carousel-item:hover .ket-project {
+  transform: translateX(0);
+}
+
+/* new project */
+
+.img-newproject {
+  border-radius: 10px;
+}
+
+.card-newproject {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-album {
+  width: 91.666667%;
+}
+
+@media screen and (max-width: 768px) {
+  .project-section {
+    padding: 0 10px 0 10px;
+  }
+
+  .tech-skill {
+    padding: 20px;
+  }
+
+  .ket-project {
+    width: 100%;
+  }
+
+  .projek-brand {
+    padding-left: 10px;
+  }
+
+  .card-newproject {
+    flex-direction: column;
+  }
+
+  .card-newproject figure {
+    margin-left: 20px;
+  }
+
+  .body-card {
+    order: 2;
+  }
+
+  .figure-card {
+    order: 1;
+  }
+
+  .image-album {
+    width: 95%;
+  }
+}
