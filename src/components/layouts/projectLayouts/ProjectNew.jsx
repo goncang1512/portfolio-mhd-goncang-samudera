@@ -10,8 +10,10 @@ function ProjectNew() {
         <CardProject.Body>
           <CardProject.Title>Ecommerce</CardProject.Title>
           <CardProject.Ception>
-            Lorem ipsum dolor sit consectetur adipisicing elit. Earum fuga porro
-            architecto eius provident iusto maxime officia animi inventore.
+            Project ini merupakan website usaha yang bisa search dan membeli
+            barang tapi website ini hanya dapat membeli barang belum bisa untuk
+            menjual barang. Dan teknologi yang di gunakan adalah tailwind dengan
+            komponen dari daisy ui.
           </CardProject.Ception>
           <CardProject.Tech>
             <div className="border py-1 px-5 shadow-xl">TAILWIND</div>
@@ -28,8 +30,10 @@ function ProjectNew() {
         <CardProject.Body classBody="body-card">
           <CardProject.Title>Web Kasir</CardProject.Title>
           <CardProject.Ception>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-            cupiditate quos esse fugit repellendus at?
+            Ini adalah sebuah proyek website kasir yang berguna untuk menghitung
+            dan menerima pesanan makanan, namun hanya dapat digunakan di sisi
+            kasir. Selain itu, website ini juga dapat menjadi platform untuk
+            memperkenalkan usaha makanan Anda.
           </CardProject.Ception>
           <CardProject.Tech>
             <div className="border py-1 px-5 shadow-xl">REACT</div>
@@ -47,20 +51,20 @@ function ProjectNew() {
       </CardProject>
 
       <CardProject>
-        <CardProject.Figure img="../../assets/img/project-webkasir.png" />
+        <CardProject.Figure img="../../assets/png/portfolio-pertama.png" />
         <CardProject.Body>
-          <CardProject.Title>Ecommerce</CardProject.Title>
+          <CardProject.Title>Portfolio Pribadi</CardProject.Title>
           <CardProject.Ception>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
-            inventore.
+            Ini merupakan project portfolio pertama saya menggunakan react js
+            dan tidak menggunakan css framework. Ini semua menggunakan css
+            murni.
           </CardProject.Ception>
           <CardProject.Tech>
-            <div className="border py-1 px-5 shadow-xl">TAILWIND</div>
             <div className="border py-1 px-5 shadow-xl">REACT</div>
           </CardProject.Tech>
           <CardProject.Button
-            linkGit="https://unsplash.com/photos/a3vDd8hzuYs"
-            demo="https://github.com/goncang1512/website-kasir"
+            linkGit="https://github.com/goncang1512/portfolio-mhdgoncang"
+            demo="https://portfolio-mhdgoncang-f593c6.netlify.app/"
           />
         </CardProject.Body>
       </CardProject>

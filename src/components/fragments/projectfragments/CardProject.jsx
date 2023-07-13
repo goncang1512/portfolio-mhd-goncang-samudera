@@ -3,6 +3,7 @@ import LinkDemo from "../../elements/projectelements/LinkDemo";
 import { AiFillGithub } from "react-icons/ai";
 import { RiShareBoxFill } from "react-icons/ri";
 
+// Card container
 function CardProject(props) {
   const { children } = props;
   return (
@@ -16,6 +17,7 @@ function CardProject(props) {
   );
 }
 
+// Foto card project
 const Figure = (props) => {
   const { img, classFigure } = props;
   return (
@@ -31,48 +33,51 @@ const Figure = (props) => {
   );
 };
 
+// Body dari title, ception, tech dan tombol
 const Body = (props) => {
   const { children, classBody } = props;
   return (
     <div
-      className={`${classBody} card-ception flex h-full flex-col justify-center gap-7 p-5`}
+      className={`${classBody} card-ception flex flex-col justify-center h-full gap-7 p-5`}
     >
       {children}
     </div>
   );
 };
 
+// Title card
 const Title = (props) => {
   const { children } = props;
   return (
     <div>
-      <h2 className="font-bold text-center">{children}</h2>
+      <h2 className="font-bold text-center text-xl">{children}</h2>
     </div>
   );
 };
 
+// Ception card
 const Ception = (props) => {
   const { children } = props;
   return (
     <>
-      <p className="w-80">{children}</p>
+      <p className="ception-project text-gray-500">{children}</p>
     </>
   );
 };
 
+// Teknologi/tech stack card
 const Tech = (props) => {
   const { children } = props;
   return (
-    <div className="flex justify-center gap-5 flex-wrap max-w-xs">
-      {children}
-    </div>
+    <div className="flex justify-center flex-wrap gap-5 w-full">{children}</div>
   );
 };
 
+// Tombol card
 const Button = (props) => {
   const { linkGit, demo } = props;
   return (
-    <div className="flex justify-center gap-5 mt-5 ">
+    <div className="flex justify-center items-center gap-5 mt-5">
       <LinkDemo link={linkGit}>
         Code <AiFillGithub size="30" />
       </LinkDemo>

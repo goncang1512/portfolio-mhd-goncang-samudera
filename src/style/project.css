@@ -51,6 +51,10 @@
   width: 91.666667%;
 }
 
+.ception-project {
+  width: 320px;
+}
+
 @media screen and (max-width: 768px) {
   .project-section {
     padding: 0 10px 0 10px;
@@ -86,5 +90,9 @@
 
   .image-album {
     width: 95%;
+  }
+
+  .ception-project {
+    width: 100%;
   }
 }
