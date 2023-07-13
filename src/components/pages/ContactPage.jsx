@@ -3,6 +3,7 @@ import "../../style/contact.css";
 import Navbar from "../layouts/Navbar";
 import RightBar from "../layouts/contactLayouts/RightBar";
 import LeftBar from "../layouts/contactLayouts/LeftBar";
+import CopyRight from "../layouts/CopyRight";
 
 function ContactPage() {
   return (
@@ -21,6 +22,9 @@ function ContactPage() {
             <RightBar />
           </div>
         </div>
+      </div>
+      <div className="w-screen">
+        <CopyRight />
       </div>
     </div>
   );

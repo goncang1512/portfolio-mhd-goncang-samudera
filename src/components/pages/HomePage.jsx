@@ -3,21 +3,25 @@ import "../../style/home.css";
 import Navbar from "../layouts/Navbar";
 import HomeLeft from "../layouts/homeLayouts/HomeLeft";
 import HomeRight from "../layouts/homeLayouts/HomeRight";
+import CopyRight from "../layouts/CopyRight";
 
 function HomePage() {
   return (
-    <div className="home-page w-full h-screen flex flex-col">
+    <div className="home-page w-full h-screen flex flex-col overflow-x-hidden">
       <div>
         <Navbar />
       </div>
-      <section className="home-section h-screen flex items-center">
+      <div className="home-section flex pb-10">
         <div className="home-left w-full h-full items-center flex xm-full">
           <HomeLeft />
         </div>
-        <div className="home-right flex w-full justify-center h-full items-center">
+        <div className="home-right flex w-full justify-center h-screen items-center">
           <HomeRight />
         </div>
-      </section>
+      </div>
+      <div className="w-screen">
+        <CopyRight />
+      </div>
     </div>
   );
 }

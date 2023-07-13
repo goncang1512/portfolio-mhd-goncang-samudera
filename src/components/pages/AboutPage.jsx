@@ -7,8 +7,8 @@ function AboutPage() {
       <div className="z-50">
         <Navbar />
       </div>
-      <section className="pt-20">
-        <p style={{ marginLeft: "50px", color: "blue" }}>Cooming Soon</p>
+      <section className="h-screen w-screen flex justify-center items-center text-blue-500 text-3xl">
+        <p>Cooming Soon</p>
       </section>
     </div>
   );

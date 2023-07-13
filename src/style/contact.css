@@ -69,5 +69,6 @@ textarea {
   }
   .right {
     order: 1;
+    height: 100vh;
   }
 }

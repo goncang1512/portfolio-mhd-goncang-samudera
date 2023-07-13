@@ -144,4 +144,12 @@
   .container-teks {
     padding: 0;
   }
+
+  .home-right {
+    margin-top: -135px;
+  }
+
+  .home-left {
+    margin-top: -50px;
+  }
 }
