@@ -169,4 +169,8 @@ body {
   .copy-page {
     padding: 20px;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
