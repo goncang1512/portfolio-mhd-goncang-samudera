@@ -8,7 +8,7 @@ function AboutLeft() {
         <img
           src="../../public/assets/png/text-frontend.png"
           alt=""
-          className="image-rotation w-40 absolute p-2"
+          className="image-rotation w-40 p-2"
         />
         <div className="icon-arrow text-black absolute">
           <a href="https://github.com/goncang1512/portfolio-mhd-goncang-samudera">
