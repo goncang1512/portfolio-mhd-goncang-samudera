@@ -12,7 +12,6 @@ function TechSkill() {
         <IconSkill src="../../assets/svg/react-js-icon.svg" alt="React JS" />
         <IconSkill src="../../assets/svg/bootstrap-icon.svg" alt="Bootstrap" />
         <IconSkill src="../../assets/svg/tailwind-icon.svg" alt="Tailwind" />
-        <IconSkill src="../../assets/svg/node-js-icon.svg" alt="Node JS" />
       </div>
     </div>
   );

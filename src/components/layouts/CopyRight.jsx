@@ -7,14 +7,16 @@ function CopyRight() {
       <div className="copy-right h-full flex justify-between items-center w-full">
         <div>
           <h1 className="text-lg flex items-center w-full">
-            Copyright © 2023. All rights are reserved
+            Copyright © 2023.
           </h1>
         </div>
         <div>
-          <AiFillGithub
-            size="27"
-            className="icon-copy hover:scale-110 cursor-pointer text-white"
-          />
+          <a href="https://github.com/goncang1512/portfolio-mhd-goncang-samudera">
+            <AiFillGithub
+              size="27"
+              className="icon-copy hover:scale-110 cursor-pointer text-white"
+            />
+          </a>
         </div>
       </div>
     </div>

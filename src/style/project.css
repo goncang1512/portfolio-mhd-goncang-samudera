@@ -1,7 +1,6 @@
 .project-page {
   background-color: #f9f9f9;
 }
-
 /* Project */
 .icon-skill {
   filter: grayscale(100%) brightness(70%);
@@ -48,7 +47,18 @@
 }
 
 .image-album {
-  width: 91.666667%;
+  width: 575px;
+  object-position: top;
+  transition: 9s all ease;
+  cursor: pointer;
+}
+
+.img-transition {
+  transition: 3s all ease;
+}
+
+.image-album:hover {
+  object-position: bottom;
 }
 
 .ception-project {
@@ -89,7 +99,7 @@
   }
 
   .image-album {
-    width: 95%;
+    width: 95.5%;
   }
 
   .ception-project {

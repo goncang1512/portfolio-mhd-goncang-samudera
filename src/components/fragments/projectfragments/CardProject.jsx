@@ -19,14 +19,14 @@ function CardProject(props) {
 
 // Foto card project
 const Figure = (props) => {
-  const { img, classFigure } = props;
+  const { img, classFigure, classImg } = props;
   return (
     <>
       <figure className={`${classFigure} my-5 ml-5`}>
         <img
           src={img}
           alt="Album"
-          className="image-album rounded-xl h-96 object-cover"
+          className={`${classImg} image-album rounded-xl h-96 object-cover border drop-shadow-md`}
         />
       </figure>
     </>

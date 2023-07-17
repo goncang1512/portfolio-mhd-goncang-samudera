@@ -6,14 +6,14 @@ function ProjectNew() {
     <>
       <h1 className="text-3xl">Project</h1>
       <CardProject>
-        <CardProject.Figure img="../../assets/img/project-ecommerce.png" />
+        <CardProject.Figure img="../../assets/png/Store-page.png" />
         <CardProject.Body>
           <CardProject.Title>Ecommerce</CardProject.Title>
           <CardProject.Ception>
             Project ini merupakan website usaha yang bisa search dan membeli
             barang tapi website ini hanya dapat membeli barang belum bisa untuk
             menjual barang. Dan teknologi yang di gunakan adalah tailwind dengan
-            komponen dari daisy ui.
+            komponen dari daisy ui. (belum selesai)
           </CardProject.Ception>
           <CardProject.Tech>
             <div className="border py-1 px-5 shadow-xl">TAILWIND</div>
@@ -33,7 +33,7 @@ function ProjectNew() {
             Ini adalah sebuah proyek website kasir yang berguna untuk menghitung
             dan menerima pesanan makanan, namun hanya dapat digunakan di sisi
             kasir. Selain itu, website ini juga dapat menjadi platform untuk
-            memperkenalkan usaha makanan Anda.
+            memperkenalkan usaha makanan Anda. (belum selesai)
           </CardProject.Ception>
           <CardProject.Tech>
             <div className="border py-1 px-5 shadow-xl">REACT</div>
@@ -45,13 +45,14 @@ function ProjectNew() {
           />
         </CardProject.Body>
         <CardProject.Figure
-          img="../../assets/img/project-webkasir.png"
+          img="../../assets/png/project-web-kasir.png"
           classFigure="figure-card"
+          classImg="img-transition"
         />
       </CardProject>
 
       <CardProject>
-        <CardProject.Figure img="../../assets/png/portfolio-pertama.png" />
+        <CardProject.Figure img="../../assets/png/Portfolio-old.png" />
         <CardProject.Body>
           <CardProject.Title>Portfolio Pribadi</CardProject.Title>
           <CardProject.Ception>
