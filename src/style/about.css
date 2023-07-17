@@ -15,7 +15,7 @@
 
 .container-rotate {
   position: absolute;
-  top: 96%;
+  top: 94%;
   left: 95%;
   transform: translateX(-50%);
 }
@@ -60,6 +60,6 @@
   }
 
   .container-rotate {
-    left: 82%;
+    left: 80%;
   }
 }
