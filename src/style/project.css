@@ -49,12 +49,12 @@
 .image-album {
   width: 575px;
   object-position: top;
-  transition: 9s all ease;
+  transition: 20s all ease;
   cursor: pointer;
 }
 
 .img-transition {
-  transition: 3s all ease;
+  transition: 10s all ease;
 }
 
 .image-album:hover {
