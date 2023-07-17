@@ -6,7 +6,7 @@ function AboutLeft() {
     <div className="img-content relative rounded-xl">
       <div className="container-rotate flex justify-center items-center w-36">
         <img
-          src="../../public/assets/svg/front-end-circle.svg"
+          src="../../public/assets/png/text-frontend.png"
           alt=""
           className="image-rotation w-40 absolute p-2"
         />
