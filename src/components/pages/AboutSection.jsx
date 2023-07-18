@@ -7,7 +7,7 @@ import CopyRight from "../layouts/CopyRight";
 
 function AboutSection() {
   return (
-    <div className="overflow-x-hidden w-full h-screen gap-5">
+    <div className="about-page overflow-x-hidden w-full h-screen gap-5">
       <div className="z-50">
         <Navbar />
       </div>

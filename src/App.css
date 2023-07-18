@@ -1,6 +1,22 @@
 /* import font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
+.for_light_theme {
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --bg-color: #fff;
+  --font-color: #424242;
+  --heading-color: #292922;
+}
+
+.for_dark_theme {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --bg-color: #161625;
+  --font-color: #e1e1ff;
+  --heading-color: #818cab;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;

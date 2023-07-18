@@ -1,3 +1,7 @@
+.about-page {
+  background-color: var(--background-white);
+}
+
 /* About left */
 .img-content {
   background-image: url("https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
@@ -23,7 +27,7 @@
 .image-rotation {
   animation: rotation 10s linear infinite;
   position: absolute;
-  background-color: white;
+  background-color: var(--background-white);
   border-radius: 100%;
 }
 

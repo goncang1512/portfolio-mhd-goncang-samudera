@@ -1,5 +1,5 @@
 .project-page {
-  background-color: #f9f9f9;
+  background-color: var(--background-white);
 }
 /* Project */
 .icon-skill {

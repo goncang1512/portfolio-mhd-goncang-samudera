@@ -1,13 +1,6 @@
 .home-page {
-  background-color: #f9f9f9;
-  height: 100vh;
+  background-color: var(--background-white);
 }
-
-.home-right {
-  background-color: #f9f9f9;
-}
-
-/* Home Left */
 
 /* Home Right */
 .foto-profil {
@@ -43,7 +36,6 @@
 }
 
 .brand-name {
-  color: white;
   width: 450px;
 }
 
@@ -51,7 +43,6 @@
   font-size: 20px;
   font-weight: 600;
   min-width: 280px;
-  color: white;
   width: 450px;
 }
 
@@ -132,15 +123,6 @@
 }
 
 /* Sosmed */
-.sosmed-home a img {
-  filter: grayscale(100%) brightness(70%);
-  cursor: pointer;
-}
-
-.sosmed-home a img:hover {
-  filter: none;
-}
-
 .download-button {
   transition: 0.3s all ease;
 }
@@ -155,20 +137,18 @@
   .home-left {
     width: 100vw;
     height: 100px;
-    padding: 50px 20px;
+    padding: 0px 20px;
+    margin-top: -50px;
+    order: 2;
+  }
+
+  .home-right {
+    margin-top: 100px;
+    order: 1;
   }
 
   .container-teks {
     padding: 0;
-  }
-
-  .home-right {
-    margin-top: -130px;
-  }
-
-  .home-left {
-    margin-top: -50px;
-    padding-bottom: 100px;
   }
 
   .foto-profil {

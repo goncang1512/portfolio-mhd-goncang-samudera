@@ -1,17 +1,21 @@
 import React from "react";
+import SosmedEl from "../../elements/homeElements/SosmedElements";
 
 function Sosmed() {
   return (
     <>
-      <a href="https://www.instagram.com/mhdgoncang/?igshid=ZDdkNTZiNTM=">
-        <img src="../../assets/svg/instagram-icon.svg" alt="" className="w-8" />
-      </a>
-      <a href="https://twitter.com/GoncangSamudera?t=kiEKN6_OJkDoynL4AuffSg&s=09">
-        <img src="../../assets/svg/twitter-icon.svg" alt="" className="w-8" />
-      </a>
-      <a href="https://github.com/goncang1512">
-        <img src="../../assets/svg/github-icon.svg" alt="" className="w-8" />
-      </a>
+      <SosmedEl
+        src="../../assets/svg/instagram-icon.svg"
+        link="https://www.instagram.com/mhdgoncang/?igshid=ZDdkNTZiNTM="
+      />
+      <SosmedEl
+        src="../../assets/svg/twitter-icon.svg"
+        link="https://twitter.com/GoncangSamudera?t=kiEKN6_OJkDoynL4AuffSg&s=09"
+      />
+      <SosmedEl
+        src="../../assets/svg/github-icon.svg"
+        link="https://github.com/goncang1512"
+      />
     </>
   );
 }
