@@ -72,4 +72,8 @@ textarea {
     order: 1;
     height: 100vh;
   }
+
+  .br-location {
+    display: none;
+  }
 }

@@ -28,7 +28,7 @@ function LeftBar() {
         <div className="flex flex-col justify-start">
           <h1 className="font-bold text-xl text-start text-black">Location</h1>
           <h1 className="text-lg text-start hover:text-blue-500 cursor-pointer text-black">
-            Tapanuli Selatan, Sumatra Utara, <br />
+            Tapanuli Selatan, Sumatra Utara, <br className="br-location" />
             Indonesia
           </h1>
         </div>

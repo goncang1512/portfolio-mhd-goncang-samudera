@@ -21,7 +21,7 @@ function Navbar() {
     <>
       <div className="navbar-top bg-white shadow-md h-16 w-screen flex justify-between items-center fixed">
         <div className="text-white flex items-center">
-          <p className="text-2xl text-black">Mhd. Goncang</p>
+          <p className="navbar-name text-4xl text-black">Mhd. Goncang</p>
         </div>
         <ul className="navbar-menu w-80 flex justify-evenly">
           <RouteLink to="/">Home</RouteLink>
