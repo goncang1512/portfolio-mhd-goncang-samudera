@@ -26,7 +26,7 @@ const Figure = (props) => {
         <img
           src={img}
           alt="Album"
-          className={`${classImg} image-album rounded-xl h-96 object-cover border drop-shadow-md`}
+          className={`${classImg} ease-in  image-album rounded-xl h-96 object-cover border drop-shadow-md`}
         />
       </figure>
     </>

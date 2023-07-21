@@ -6,7 +6,10 @@ function ProjectNew() {
     <>
       <h1 className="text-3xl">Project</h1>
       <CardProject>
-        <CardProject.Figure img="../../assets/png/Store-page.png" />
+        <CardProject.Figure
+          img="../../assets/png/Store-page.png"
+          classImg="duration-14000"
+        />
         <CardProject.Body>
           <CardProject.Title>Ecommerce</CardProject.Title>
           <CardProject.Ception>
@@ -47,12 +50,15 @@ function ProjectNew() {
         <CardProject.Figure
           img="../../assets/png/project-web-kasir.png"
           classFigure="figure-card"
-          classImg="img-transition"
+          classImg="duration-6000"
         />
       </CardProject>
 
       <CardProject>
-        <CardProject.Figure img="../../assets/png/Portfolio-old.png" />
+        <CardProject.Figure
+          img="../../assets/png/Portfolio-old.png"
+          classImg="duration-12000"
+        />
         <CardProject.Body>
           <CardProject.Title>Portfolio Pribadi</CardProject.Title>
           <CardProject.Ception>
