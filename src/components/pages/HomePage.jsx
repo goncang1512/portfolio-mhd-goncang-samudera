@@ -15,7 +15,7 @@ function HomePage() {
         <div className="home-left md:order-1 order-2 w-full h-full items-center flex xm-full">
           <HomeLeft />
         </div>
-        <div className="home-right md:order-2 order-1 flex w-full justify-center h-screen items-center md:mt-0 mt-24z">
+        <div className="home-right md:order-2 order-1 flex w-full justify-center h-screen items-center md:mt-0 mt-100px">
           <HomeRight />
         </div>
       </div>

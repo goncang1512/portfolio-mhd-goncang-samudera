@@ -11,6 +11,9 @@ export default {
       colors: {
         "netral-225": "#f9f9f9",
       },
+      margin: {
+        "100px": "100px",
+      },
     },
   },
   plugins: [require("daisyui")],
