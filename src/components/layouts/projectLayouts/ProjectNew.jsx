@@ -16,10 +16,11 @@ function ProjectNew() {
             Project ini merupakan website usaha yang bisa search dan membeli
             barang tapi website ini hanya dapat membeli barang belum bisa untuk
             menjual barang. Dan teknologi yang di gunakan adalah tailwind dengan
-            komponen dari daisy ui. (belum selesai)
+            komponen dari daisy ui. Dan website ini juga untuk bejar fetch API.
+            (belum selesai)
           </CardProject.Ception>
           <CardProject.Tech>
-            <div className="border py-1 px-5 shadow-xl">TAILWIND</div>
+            <div className="border py-1 px-5 shadow-xl">TAILWIND CSS</div>
             <div className="border py-1 px-5 shadow-xl">DAISY UI</div>
           </CardProject.Tech>
           <CardProject.Button
@@ -30,7 +31,7 @@ function ProjectNew() {
       </CardProject>
 
       <CardProject>
-        <CardProject.Body classBody="body-card">
+        <CardProject.Body classBody="md:order-1 order-2">
           <CardProject.Title>Web Kasir</CardProject.Title>
           <CardProject.Ception>
             Ini adalah sebuah proyek website kasir yang berguna untuk menghitung
@@ -49,7 +50,7 @@ function ProjectNew() {
         </CardProject.Body>
         <CardProject.Figure
           img="../../assets/png/project-web-kasir.png"
-          classFigure="figure-card"
+          classFigure="md:order-2 order-1"
           classImg="duration-6000"
         />
       </CardProject>
@@ -74,6 +75,32 @@ function ProjectNew() {
             demo="https://portfolio-mhdgoncang-f593c6.netlify.app/"
           />
         </CardProject.Body>
+      </CardProject>
+
+      <CardProject>
+        <CardProject.Body classBody="md:order-1 order-2">
+          <CardProject.Title>Library Komponen</CardProject.Title>
+          <CardProject.Ception>
+            Ini merupakan website yang saya buat untuk menyimpan komponen
+            komponen website yang pernah saya gunakan sebelumya. Yang
+            menggunakan Tailwind CSS dan react. Sedangkan untuk contact di kirim
+            pesan nya saya menggunakan emailjs untuk mengirim pesannya. (belum
+            selesai)
+          </CardProject.Ception>
+          <CardProject.Tech>
+            <div className="border py-1 px-5 shadow-xl">REACT</div>
+            <div className="border py-1 px-5 shadow-xl">TAILWIND CSS</div>
+          </CardProject.Tech>
+          <CardProject.Button
+            demo="https://library-goncang.netlify.app/"
+            linkGit="https://github.com/goncang1512/library-goncang"
+          />
+        </CardProject.Body>
+        <CardProject.Figure
+          img="../../assets/png/Library-web.png"
+          classFigure="md:order-2 order-1"
+          classImg="duration-12000"
+        />
       </CardProject>
     </>
   );

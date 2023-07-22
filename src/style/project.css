@@ -13,7 +13,8 @@
   object-fit: cover;
 }
 
-.tech-skill {
+.tech-skill,
+.project-section {
   padding: 20px 190px 20px 190px;
 }
 
@@ -27,10 +28,6 @@
   padding: 10px 10px 10px 75px;
 }
 
-.project-section {
-  padding: 20px 190px 20px 190px;
-}
-
 .carousel-item:hover .ket-project {
   transform: translateX(0);
 }
@@ -39,11 +36,6 @@
 
 .img-newproject {
   border-radius: 10px;
-}
-
-.card-newproject {
-  display: flex;
-  flex-direction: row;
 }
 
 .image-album {
@@ -78,20 +70,8 @@
     padding-left: 10px;
   }
 
-  .card-newproject {
-    flex-direction: column;
-  }
-
   .card-newproject figure {
     margin-left: 20px;
-  }
-
-  .body-card {
-    order: 2;
-  }
-
-  .figure-card {
-    order: 1;
   }
 
   .image-album {

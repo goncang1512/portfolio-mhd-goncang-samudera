@@ -9,7 +9,7 @@ function CardProject(props) {
   return (
     <div className="bg-white mt-5 flex">
       <div className="item-ptoject w-full">
-        <div className="card-newproject rounded-xl bg-white border shadow-xl">
+        <div className="card-newproject flex md:flex-row flex-col rounded-xl bg-white border shadow-xl">
           {children}
         </div>
       </div>
