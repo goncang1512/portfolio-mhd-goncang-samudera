@@ -27,12 +27,12 @@
   animation: rotation 10s linear infinite;
 }
 
-.icon-arrow {
-  transition: 0.3s all ease;
-}
-
 .hover-rotation {
   animation: rotation 2.5s linear infinite;
+}
+
+.icon-arrow {
+  transition: 0.3s all ease;
 }
 
 .icon-arrow:hover {

@@ -14,12 +14,12 @@ function CardProject(props) {
   const { children, dataAos } = props;
   return (
     <div
-      className="bg-white mt-5 flex rounded-xl"
+      className="bg-white mt-5 flex rounded-xl w-full"
       data-aos={dataAos}
       data-aos-easing="ease-out"
     >
-      <div className="item-ptoject w-full">
-        <div className="card-newproject flex md:flex-row flex-col rounded-xl bg-white border shadow-xl">
+      <div className="w-full">
+        <div className="flex md:flex-row flex-col rounded-xl bg-white border shadow-xl">
           {children}
         </div>
       </div>
@@ -43,11 +43,11 @@ const Figure = (props) => {
   const { img, classFigure, classImg } = props;
   return (
     <>
-      <figure className={`${classFigure} my-5 ml-5`}>
+      <figure className={`${classFigure} pr-4 my-5 ml-5`}>
         <img
           src={img}
           alt="Album"
-          className={`${classImg} ease-in  image-album rounded-xl h-96 object-cover border drop-shadow-md`}
+          className={`${classImg} md:w-575 w-full h-96 rounded-xl  object-cover border drop-shadow-md cursor-pointer ease-in-out transition-all object-top hover:object-bottom`}
         />
       </figure>
     </>
@@ -59,7 +59,7 @@ const Body = (props) => {
   const { children, classBody } = props;
   return (
     <div
-      className={`${classBody} card-ception flex flex-col justify-center h-full gap-7 p-5`}
+      className={`${classBody} flex flex-col justify-between md:h-96 h-full gap-7 p-5`}
     >
       {children}
     </div>
@@ -83,7 +83,9 @@ const Ception = (props) => {
   const { children } = props;
   return (
     <>
-      <p className="ception-project text-gray-500">{children}</p>
+      <p className="md:w-80 w-full text-gray-500 text-center text-md">
+        {children}
+      </p>
     </>
   );
 };

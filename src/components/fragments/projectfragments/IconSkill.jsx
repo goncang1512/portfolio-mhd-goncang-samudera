@@ -1,11 +1,16 @@
 import React from "react";
 
 function IconSkill(props) {
-  const { src, alt } = props;
+  const { src, alt, title } = props;
   return (
     <>
       <div className="flex items-center">
-        <img className="icon-skill" src={src} alt={alt} />
+        <img
+          className="icon-skill cursor-pointer w-10 grayscale brightness-75 hover:filter-none"
+          src={src}
+          alt={alt}
+          title={title}
+        />
       </div>
     </>
   );

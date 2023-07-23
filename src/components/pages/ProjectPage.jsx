@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../../style/project.css";
 import Navbar from "../layouts/Navbar";
 import TechSkill from "../layouts/projectLayouts/TechSkill";
@@ -7,15 +7,15 @@ import CopyRight from "../layouts/CopyRight";
 
 function ProjectPage() {
   return (
-    <div className="project-page w-full h-full flex flex-col overflow-x-hidden">
+    <div className="bg-netral-225 w-full h-full flex flex-col overflow-x-hidden">
       <div className="z-50">
         <Navbar />
       </div>
-      <div className="h-full text-black flex flex-col">
-        <div className="tech-skill pt-20">
+      <div className="h-full text-black flex flex-col items-center">
+        <div className="container pt-28">
           <TechSkill />
         </div>
-        <div className="project-section flex flex-col gap-2">
+        <div className="container flex flex-col gap-2 pt-12">
           <ProjectNew />
         </div>
         <div className="w-screen mt-8">

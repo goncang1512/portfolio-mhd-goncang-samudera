@@ -14,6 +14,9 @@ export default {
       margin: {
         "100px": "100px",
       },
+      width: {
+        575: "575px",
+      },
     },
   },
   plugins: [],

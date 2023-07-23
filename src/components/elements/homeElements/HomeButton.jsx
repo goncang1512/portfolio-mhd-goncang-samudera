@@ -7,7 +7,7 @@ function HomeButton(props) {
     <>
       <Link to={to}>
         <button
-          className={`download-button bg-blue-600 text-white hover:scale-105 py-2 ${classname}`}
+          className={`${classname} bg-blue-600 text-white duration-300 ease-in-out trasition-all hover:scale-105 py-2 `}
         >
           {children}
         </button>

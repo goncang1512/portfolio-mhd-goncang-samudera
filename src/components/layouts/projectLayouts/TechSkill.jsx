@@ -12,12 +12,32 @@ function TechSkill() {
     <div className="flex flex-col" data-aos="fade-down">
       <CardProject.ProTitle>Tech Stack Front End</CardProject.ProTitle>
       <div className="flex w-full flex-wrap justify-evenly mt-5 gap-10">
-        <IconSkill src="../../assets/svg/html-icon.svg" alt="HTML" />
-        <IconSkill src="../../assets/svg/css-icon.svg" alt="CSS" />
-        <IconSkill src="../../assets/svg/js-icon.svg" alt="JavaScript" />
-        <IconSkill src="../../assets/svg/react-js-icon.svg" alt="React JS" />
-        <IconSkill src="../../assets/svg/bootstrap-icon.svg" alt="Bootstrap" />
-        <IconSkill src="../../assets/svg/tailwind-icon.svg" alt="Tailwind" />
+        <IconSkill
+          src="../../assets/svg/html-icon.svg"
+          alt="HTML"
+          title="HTML5"
+        />
+        <IconSkill src="../../assets/svg/css-icon.svg" alt="CSS" title="CSS3" />
+        <IconSkill
+          src="../../assets/svg/js-icon.svg"
+          alt="JavaScript"
+          title="Java Script"
+        />
+        <IconSkill
+          src="../../assets/svg/react-js-icon.svg"
+          alt="React JS"
+          title="React"
+        />
+        <IconSkill
+          src="../../assets/svg/bootstrap-icon.svg"
+          alt="Bootstrap"
+          title="Bootstrap"
+        />
+        <IconSkill
+          src="../../assets/svg/tailwind-icon.svg"
+          alt="Tailwind"
+          title="Tailwind CSS"
+        />
       </div>
     </div>
   );

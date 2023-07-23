@@ -118,11 +118,6 @@
   }
 }
 
-/* Sosmed */
-.download-button {
-  transition: 0.3s all ease;
-}
-
 @media screen and (max-width: 768px) {
   .home-section {
     padding: 0;
@@ -130,7 +125,6 @@
   }
 
   .home-left {
-    width: 100vw;
     height: 100px;
     padding: 0px 20px;
     margin-top: -50px;

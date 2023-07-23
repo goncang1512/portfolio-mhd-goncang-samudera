@@ -11,7 +11,7 @@ function CopyRight() {
           </h1>
         </div>
         <div>
-          <a href="https://github.com/goncang1512/portfolio-mhd-goncang-samudera">
+          <a href="https://github.com/goncang1512">
             <AiFillGithub
               size="27"
               className="icon-copy hover:scale-110 cursor-pointer text-white"
