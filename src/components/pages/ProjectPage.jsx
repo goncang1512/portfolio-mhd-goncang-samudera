@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../style/project.css";
 import Navbar from "../layouts/Navbar";
 import TechSkill from "../layouts/projectLayouts/TechSkill";
@@ -7,7 +7,7 @@ import CopyRight from "../layouts/CopyRight";
 
 function ProjectPage() {
   return (
-    <div className="project-page w-full h-screen flex flex-col overflow-x-hidden">
+    <div className="project-page w-full h-full flex flex-col overflow-x-hidden">
       <div className="z-50">
         <Navbar />
       </div>

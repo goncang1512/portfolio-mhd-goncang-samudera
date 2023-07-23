@@ -14,7 +14,6 @@
 
 .about-section {
   padding: 190px 190px 190px 190px;
-  display: flex;
 }
 
 .container-rotate {
@@ -26,13 +25,14 @@
 
 .image-rotation {
   animation: rotation 10s linear infinite;
-  position: absolute;
-  background-color: var(--background-white);
-  border-radius: 100%;
 }
 
 .icon-arrow {
   transition: 0.3s all ease;
+}
+
+.hover-rotation {
+  animation: rotation 2.5s linear infinite;
 }
 
 .icon-arrow:hover {
@@ -52,11 +52,7 @@
   }
 
   .about-section {
-    padding: 100px 10px 50px 10px;
-  }
-
-  .about-container {
-    flex-direction: column;
+    padding: 100px 10px 600px 10px;
   }
 
   .about-right {

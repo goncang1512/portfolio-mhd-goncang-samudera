@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LinkDemo from "../../elements/projectelements/LinkDemo";
 import { AiFillGithub } from "react-icons/ai";
 import { RiShareBoxFill } from "react-icons/ri";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Card container
 function CardProject(props) {
-  const { children } = props;
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
+  const { children, dataAos } = props;
   return (
-    <div className="bg-white mt-5 flex">
+    <div
+      className="bg-white mt-5 flex rounded-xl"
+      data-aos={dataAos}
+      data-aos-easing="ease-out"
+    >
       <div className="item-ptoject w-full">
         <div className="card-newproject flex md:flex-row flex-col rounded-xl bg-white border shadow-xl">
           {children}
@@ -16,6 +26,17 @@ function CardProject(props) {
     </div>
   );
 }
+
+const ProTitle = (props) => {
+  const { dataAni, children } = props;
+  return (
+    <>
+      <h1 className="text-3xl" data-aos={dataAni}>
+        {children}
+      </h1>
+    </>
+  );
+};
 
 // Foto card project
 const Figure = (props) => {
@@ -47,10 +68,12 @@ const Body = (props) => {
 
 // Title card
 const Title = (props) => {
-  const { children } = props;
+  const { children, classTitle } = props;
   return (
     <div>
-      <h2 className="font-bold text-center text-xl">{children}</h2>
+      <h2 className={`${classTitle} font-bold text-center text-xl`}>
+        {children}
+      </h2>
     </div>
   );
 };
@@ -88,6 +111,7 @@ const Button = (props) => {
   );
 };
 
+CardProject.ProTitle = ProTitle;
 CardProject.Body = Body;
 CardProject.Figure = Figure;
 CardProject.Title = Title;

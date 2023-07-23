@@ -1,24 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../style/about.css";
 import Navbar from "../layouts/Navbar";
 import AboutLeft from "../layouts/aboutLayouts/AboutLeft";
 import AboutRight from "../layouts/aboutLayouts/AboutRight";
 import CopyRight from "../layouts/CopyRight";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function AboutSection() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="about-page overflow-x-hidden w-full h-screen gap-5">
+    <div className="about-page overflow-x-hidden w-screen h-screen gap-5">
       <div className="z-50">
         <Navbar />
       </div>
-      <div className="about-section w-screen rounded-xl shadow-xl">
-        <div className="about-container flex">
+      <div className="about-section flex flex-col w-screen rounded-xl shadow-xl h-screen">
+        <div className="about-container flex md:flex-row flex-col">
           {/* card bagian kanan about me */}
-          <div className="w-full flex items-center justify-start">
+          <div
+            className="w-full flex items-center justify-start"
+            data-aos="zoom-in"
+          >
             <AboutLeft />
           </div>
-          {/* card bagian kanan kirim email */}
-          <div className="about-right w-full">
+          {/* card bagian kanan untuk memperkenalkan diri */}
+          <div className="about-right w-full" data-aos="fade-right">
             <AboutRight />
           </div>
         </div>

@@ -4,8 +4,9 @@ import CardProject from "../../fragments/projectfragments/CardProject";
 function ProjectNew() {
   return (
     <>
-      <h1 className="text-3xl">Project</h1>
-      <CardProject>
+      <CardProject.ProTitle dataAni="fade-right">Project</CardProject.ProTitle>
+
+      <CardProject dataAos="fade-right">
         <CardProject.Figure
           img="../../assets/png/Store-page.png"
           classImg="duration-14000"
@@ -30,7 +31,7 @@ function ProjectNew() {
         </CardProject.Body>
       </CardProject>
 
-      <CardProject>
+      <CardProject dataAos="fade-left">
         <CardProject.Body classBody="md:order-1 order-2">
           <CardProject.Title>Web Kasir</CardProject.Title>
           <CardProject.Ception>
@@ -55,7 +56,7 @@ function ProjectNew() {
         />
       </CardProject>
 
-      <CardProject>
+      <CardProject dataAos="fade-right">
         <CardProject.Figure
           img="../../assets/png/Portfolio-old.png"
           classImg="duration-12000"
@@ -77,7 +78,7 @@ function ProjectNew() {
         </CardProject.Body>
       </CardProject>
 
-      <CardProject>
+      <CardProject dataAos="fade-left">
         <CardProject.Body classBody="md:order-1 order-2">
           <CardProject.Title>Library Komponen</CardProject.Title>
           <CardProject.Ception>
