@@ -21,6 +21,13 @@ body {
   background: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth; /* Safari and older versions of Chrome */
+  -moz-scroll-behavior: smooth; /* Firefox */
+  -ms-scroll-behavior: smooth; /* Edge */
+}
+
 /* Menu toggle */
 .hum-toggle {
   margin-right: 20px;

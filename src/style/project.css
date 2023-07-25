@@ -3,6 +3,55 @@
   padding: 20px 190px 20px 190px;
 }
 
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateBack {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animated-back {
+  animation: rotateBack 0.3s linear forwards;
+}
+
+.animated-icon {
+  animation: rotateIcon 0.3s linear forwards;
+}
+
+.button-project {
+  position: relative;
+}
+
+.button-project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+  border-radius: 100%;
+  clip-path: circle(0% at 50% 50%);
+  z-index: -1;
+}
+
+.button-project:hover {
+  color: white;
+}
+
+.button-project:hover::before {
+  clip-path: circle(100% at 50% 50%);
+}
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 10px 0 10px;

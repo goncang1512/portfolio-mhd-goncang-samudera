@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
-import Input from "../../elements/InputElements";
 import emailjs from "@emailjs/browser";
+import InputFloat from "../../elements/contactelements/InputFloat";
+import TextFloat from "../../elements/contactelements/TextareFloat";
 
 function LeftBar() {
   const [name, setName] = useState("");
@@ -115,39 +116,44 @@ function LeftBar() {
       {modalFail()}
       <h2 className="text-2xl text-black font-bold mb-3">Kirim Pesan</h2>
       <form
-        className="flex flex-col text-lg h-full justify-evenly items-center gap-5"
+        className="flex flex-col text-lg h-full justify-evenly items-center gap-5 md:w-3/5 w-3/4"
         ref={from}
         onSubmit={sendEmail}
       >
-        <Input
+        <InputFloat
           type="text"
           name="user_name"
           placeholder="Nama"
           value={name}
           onChange={(event) => setName(event.target.value)}
-        />
-        <Input
+        >
+          Nama
+        </InputFloat>
+        <InputFloat
           type="email"
           name="user_email"
           placeholder="Email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-        />
-        <Input
+        >
+          Email
+        </InputFloat>
+        <InputFloat
           type="number"
           name="user_phone"
           placeholder="Phone"
           value={phone}
           onChange={(event) => setPhone(event.target.value)}
-        />
-        <textarea
+        >
+          Phone
+        </InputFloat>
+        <TextFloat
           name="message"
-          placeholder="Pesan"
-          className="px-6 py-1 text-black"
           value={message}
-          required
           onChange={(event) => setMessage(event.target.value)}
-        ></textarea>
+        >
+          Pesan
+        </TextFloat>
         <button
           type="submit"
           value="Send"

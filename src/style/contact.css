@@ -10,26 +10,58 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* card bagian kanan */
-
-input,
-textarea {
-  background-color: #eee;
-  border: none;
-  padding: 12px 15px;
-  margin: 8px 0;
-  width: 100%;
-  font-size: 0.8rem;
+/* input floating */
+.did-floating-label-content {
+  position: relative;
 }
 
-input:focus,
-textarea:focus {
-  outline: 1px solid #00b4cf;
+.did-floating-label,
+.label-floating {
+  font-weight: normal;
+  top: 11px;
+  padding: 0 5px;
+  transition: 0.2s ease all;
 }
 
-textarea {
-  height: 100px;
+.did-floating-input {
+  outline: 1px solid #027789;
+  box-sizing: border-box;
+  &:focus {
+    outline: 1px solid #00b4cf;
+    ~ .did-floating-label {
+      top: -15px;
+      font-size: 16px;
+      color: #00b4cf;
+    }
+  }
+}
+
+.did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
+  top: -15px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Text Area */
+.text-area {
+  outline: 1px solid #027789;
   max-height: 180px;
+  min-height: 45px;
+  box-sizing: border-box;
+  &:focus {
+    outline: 1px solid #00b4cf;
+    ~ .label-floating {
+      top: -15px;
+      font-size: 16px;
+      color: #00b4cf;
+    }
+  }
+}
+
+.text-area:not(:placeholder-shown) ~ .label-floating {
+  top: -15px;
+  font-size: 16px;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {

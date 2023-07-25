@@ -13,7 +13,7 @@ function AboutSection() {
   }, []);
 
   return (
-    <div className="about-page overflow-x-hidden w-screen h-screen gap-5">
+    <div className="about-page overflow-x-hidden w-screen h-full gap-5">
       <div className="z-50">
         <Navbar />
       </div>

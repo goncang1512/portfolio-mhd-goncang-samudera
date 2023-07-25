@@ -10,7 +10,7 @@ function InputElements(props) {
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-        className="w-full text-black px-6 py-1 outline-none"
+        className="input-contact w-full text-black px-6 py-1 outline-none text-xl"
         required
       />
     </>

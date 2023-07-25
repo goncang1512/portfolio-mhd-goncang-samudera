@@ -11,7 +11,7 @@ function AboutLeft() {
     <div
       className={`${
         isHovered ? "img-content-two" : "img-content "
-      } relative rounded-xl`}
+      }  relative rounded-xl`}
     >
       <div className="container-rotate flex justify-center items-center w-44">
         <img
