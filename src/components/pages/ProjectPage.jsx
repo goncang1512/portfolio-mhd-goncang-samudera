@@ -11,7 +11,7 @@ function ProjectPage() {
 
   // Fungsi untuk mengubah ikon tombol saat halaman di-scroll
   const handleScroll = () => {
-    const halfPageHeight = window.innerHeight / 2;
+    const halfPageHeight = window.innerHeight / 1;
     const scrollPosition = window.scrollY;
     setShowNewIcon(scrollPosition >= halfPageHeight);
   };

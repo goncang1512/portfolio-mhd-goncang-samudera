@@ -5,7 +5,7 @@ function TextareFloat(props) {
   return (
     <div className="area-container relative w-full">
       <textarea
-        className="text-area px-6 py-4 h-28 p-2.5 bg-white text-black text-base w-full block"
+        className="text-area py-4 h-28 p-2.5 bg-white text-black text-base w-full block"
         placeholder=" "
         type={type}
         name={name}
