@@ -47,7 +47,7 @@ const Figure = (props) => {
         <img
           src={img}
           alt="Album"
-          className={`${classImg} md:w-575 w-full h-96 rounded-xl  object-cover border drop-shadow-md cursor-pointer ease-in-out transition-all object-top hover:object-bottom`}
+          className={`${classImg} md:w-575 w-full h-96 rounded-xl  object-cover border drop-shadow-md cursor-pointer ease-linear transition-all object-top hover:object-bottom`}
         />
       </figure>
     </>
