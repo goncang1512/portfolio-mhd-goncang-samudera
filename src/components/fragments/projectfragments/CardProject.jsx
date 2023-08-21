@@ -68,9 +68,9 @@ const Body = (props) => {
 
 // Title card
 const Title = (props) => {
-  const { children, classTitle } = props;
+  const { children, classTitle, classJudul } = props;
   return (
-    <div>
+    <div classname={`${classJudul}`}>
       <h2 className={`${classTitle} font-bold text-center text-xl`}>
         {children}
       </h2>

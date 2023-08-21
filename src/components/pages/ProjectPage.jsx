@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import "../../style/project.css";
 import Navbar from "../layouts/Navbar";
-import TechSkill from "../layouts/projectLayouts/TechSkill";
 import ProjectNew from "../layouts/projectLayouts/ProjectNew";
 import CopyRight from "../layouts/CopyRight";
 
@@ -28,10 +27,7 @@ function ProjectPage() {
       <div className="z-50" id="project">
         <Navbar />
       </div>
-      <div className="h-full text-black flex flex-col items-center">
-        <div className="container pt-28">
-          <TechSkill />
-        </div>
+      <div className="h-full text-black flex flex-col items-center pt-14">
         <div className="container flex flex-col gap-2 pt-12">
           <ProjectNew />
         </div>

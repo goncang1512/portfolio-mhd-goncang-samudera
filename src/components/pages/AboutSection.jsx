@@ -4,6 +4,7 @@ import Navbar from "../layouts/Navbar";
 import AboutLeft from "../layouts/aboutLayouts/AboutLeft";
 import AboutRight from "../layouts/aboutLayouts/AboutRight";
 import CopyRight from "../layouts/CopyRight";
+import TeachSkill from "../layouts/projectLayouts/TechSkill";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -17,7 +18,7 @@ function AboutSection() {
       <div className="z-50">
         <Navbar />
       </div>
-      <div className="about-section flex flex-col w-screen rounded-xl shadow-xl h-screen">
+      <div className="about-section flex flex-col w-screen rounded-xl shadow-xl h-full">
         <div className="about-container flex md:flex-row flex-col">
           {/* card bagian kanan about me */}
           <div
@@ -30,6 +31,9 @@ function AboutSection() {
           <div className="about-right w-full" data-aos="fade-right">
             <AboutRight />
           </div>
+        </div>
+        <div className="md:pt-20 pt-9 md:pb-0 pb-9">
+          <TeachSkill />
         </div>
       </div>
       <div className="w-screen">
