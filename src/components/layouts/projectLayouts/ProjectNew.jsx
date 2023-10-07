@@ -8,7 +8,7 @@ function ProjectNew() {
 
       <CardProject dataAos="fade-right">
         <CardProject.Figure
-          img="../../assets/png/Store-page.png"
+          img="../../assets/img/Store-page.jpg"
           classImg="duration-14000"
         />
         <CardProject.Body>
@@ -47,7 +47,7 @@ function ProjectNew() {
           />
         </CardProject.Body>
         <CardProject.Figure
-          img="../../assets/png/project-web-kasir.png"
+          img="../../assets/img/project-web-kasir.jpg"
           classFigure="md:order-2 order-1"
           classImg="duration-6000"
         />
@@ -55,7 +55,7 @@ function ProjectNew() {
 
       <CardProject dataAos="fade-right">
         <CardProject.Figure
-          img="../../assets/png/Portfolio-old.png"
+          img="../../assets/img/Portfolio-old.jpg"
           classImg="duration-12000"
         />
         <CardProject.Body>
@@ -93,7 +93,7 @@ function ProjectNew() {
           />
         </CardProject.Body>
         <CardProject.Figure
-          img="../../assets/png/Library-web.png"
+          img="../../assets/img/Library-web.jpg"
           classFigure="md:order-2 order-1"
           classImg="duration-12000"
         />
