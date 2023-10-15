@@ -23,7 +23,7 @@ export default function Index() {
     AOS.init({ once: true, duration: 1500 });
   });
   return (
-    <>
+    <div className="overflow-x-hidden">
       <nav>
         <Navbar />
       </nav>
@@ -97,6 +97,6 @@ export default function Index() {
       <footer id="footer">
         <CopyRight />
       </footer>
-    </>
+    </div>
   );
 }
