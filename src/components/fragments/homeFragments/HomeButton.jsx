@@ -4,7 +4,7 @@ import HomeSend from "../../elements/homeElements/HomeButton";
 function HomeButton() {
   return (
     <>
-      <HomeSend to="/contact" classname="p-7 text-base rounded-lg">
+      <HomeSend to="#contact" classname="p-7 text-base rounded-lg">
         Kirim Pesan
       </HomeSend>
       <a href="">

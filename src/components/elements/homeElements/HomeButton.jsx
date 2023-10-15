@@ -5,13 +5,13 @@ function HomeButton(props) {
   const { to, children, classname } = props;
   return (
     <>
-      <Link to={to}>
+      <a href={to}>
         <button
           className={`${classname} bg-blue-600 text-white duration-300 ease-in-out trasition-all hover:scale-105 py-2 `}
         >
           {children}
         </button>
-      </Link>
+      </a>
     </>
   );
 }

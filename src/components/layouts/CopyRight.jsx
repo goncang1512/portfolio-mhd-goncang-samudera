@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 function CopyRight() {
   return (
@@ -10,9 +10,15 @@ function CopyRight() {
             Copyright © 2023.
           </h1>
         </div>
-        <div>
+        <div className="flex gap-3">
           <a href="https://github.com/goncang1512">
             <AiFillGithub
+              size="27"
+              className="icon-copy hover:scale-110 cursor-pointer text-white"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/goncang-samudera-019363284/">
+            <AiFillLinkedin
               size="27"
               className="icon-copy hover:scale-110 cursor-pointer text-white"
             />

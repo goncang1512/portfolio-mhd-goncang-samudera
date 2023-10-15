@@ -5,9 +5,9 @@ function RouteLink(props) {
   const { to, children } = props;
   return (
     <li className="list-menu">
-      <Link to={to} className="link-menu">
+      <a href={to} className="link-menu">
         {children}
-      </Link>
+      </a>
     </li>
   );
 }

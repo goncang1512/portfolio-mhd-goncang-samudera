@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  padding: 20px 190px 20px 190px;
+}
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 8px;

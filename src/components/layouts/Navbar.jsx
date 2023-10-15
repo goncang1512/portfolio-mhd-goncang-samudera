@@ -24,10 +24,10 @@ function Navbar() {
           <p className="navbar-name text-4xl text-black">Mhd. Goncang</p>
         </div>
         <ul className="navbar-menu w-80 flex justify-evenly">
-          <RouteLink to="/">Home</RouteLink>
-          <RouteLink to="/project">Project</RouteLink>
-          <RouteLink to="/about">About</RouteLink>
-          <RouteLink to="/contact">Contact</RouteLink>
+          <RouteLink to="#home">Home</RouteLink>
+          <RouteLink to="#project">Project</RouteLink>
+          <RouteLink to="#about">About</RouteLink>
+          <RouteLink to="#contact">Contact</RouteLink>
         </ul>
 
         <div className="hum-toggle md:hidden">
