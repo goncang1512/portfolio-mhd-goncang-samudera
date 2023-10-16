@@ -25,8 +25,8 @@ function Navbar() {
         </div>
         <ul className="navbar-menu w-80 flex justify-evenly">
           <RouteLink to="#home">Home</RouteLink>
-          <RouteLink to="#project">Project</RouteLink>
           <RouteLink to="#about">About</RouteLink>
+          <RouteLink to="#project">Project</RouteLink>
           <RouteLink to="#contact">Contact</RouteLink>
         </ul>
 

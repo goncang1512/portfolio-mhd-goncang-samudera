@@ -13,6 +13,7 @@ import AboutRight from "../layouts/aboutLayouts/AboutRight";
 import TeachSkill from "../layouts/projectLayouts/TechSkill";
 import RightBar from "../layouts/contactLayouts/RightBar";
 import LeftBar from "../layouts/contactLayouts/LeftBar";
+import Maps from "../layouts/contactLayouts/Maps";
 import CopyRight from "../layouts/CopyRight";
 
 import AOS from "aos";
@@ -47,11 +48,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Bagian Project */}
-      <section className="container flex flex-col pt-20" id="project">
-        <ProjectNew />
-      </section>
-
       {/* Bagian About */}
       <section
         className="container flex flex-col w-screen h-full pt-20"
@@ -75,6 +71,11 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Bagian Project */}
+      <section className="container flex flex-col pt-20" id="project">
+        <ProjectNew />
+      </section>
+
       {/* Bagian Contact */}
       <section
         className="container pb-10 pt-20"
@@ -90,6 +91,9 @@ export default function Index() {
           <div className="right flex flex-col items-center justify-center  h-full w-full md:order-2 p-6 order-1 bg-white">
             <RightBar />
           </div>
+        </div>
+        <div className="w-full pt-10">
+          <Maps />
         </div>
       </section>
 
