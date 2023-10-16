@@ -17,9 +17,9 @@ function LeftBar() {
         </div>
         <div className="flex flex-col justify-start">
           <h1 className="font-bold text-xl text-start text-black">Email</h1>
-          <h1 className="text-lg text-black text-start hover:text-blue-500 cursor-pointer">
+          <p className="text-lg text-black text-start hover:text-blue-500">
             samuderanst@gmail.com
-          </h1>
+          </p>
         </div>
       </div>
       <div className="flex items-center gap-3">
@@ -28,9 +28,9 @@ function LeftBar() {
         </div>
         <div className="flex flex-col justify-start">
           <h1 className="font-bold text-xl text-start text-black">WhatsApp</h1>
-          <h1 className="text-lg text-black text-start hover:text-blue-500 cursor-pointer">
+          <p className="text-lg text-black text-start hover:text-blue-500">
             081357579420
-          </h1>
+          </p>
         </div>
       </div>
       <div className="flex items-center gap-3">
@@ -39,9 +39,9 @@ function LeftBar() {
         </div>
         <div className="flex flex-col justify-start">
           <h1 className="font-bold text-xl text-start text-black">Location</h1>
-          <h1 className="text-lg text-start hover:text-blue-500 cursor-pointer text-black">
+          <p className="text-lg text-start hover:text-blue-500 text-black">
             Sipirok, Tapanuli Selatan, Sumatra Utara, Indonesia
-          </h1>
+          </p>
         </div>
       </div>
     </>

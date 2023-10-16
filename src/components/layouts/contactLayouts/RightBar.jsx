@@ -116,7 +116,7 @@ function LeftBar() {
       {modalFail()}
       <h2 className="text-2xl text-black font-bold mb-3">Kirim Pesan</h2>
       <form
-        className="flex flex-col text-lg h-full justify-evenly items-center gap-5 md:w-3/5 w-3/4"
+        className="md:px-7 px-0 flex flex-col text-lg h-full justify-evenly items-center gap-5 w-full"
         ref={from}
         onSubmit={sendEmail}
       >
@@ -157,7 +157,7 @@ function LeftBar() {
         <button
           type="submit"
           value="Send"
-          className="bg-blue-400 text-white py-2 w-8/12 rounded-full hover:bg-blue-500"
+          className="bg-blue-400 text-white py-2 w-5/12 rounded-full hover:bg-blue-500"
         >
           Kirim
         </button>

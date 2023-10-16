@@ -84,7 +84,7 @@ export default function Index() {
       >
         <div className="card-container flex md:flex-row flex-col border rounded-xl shadow-xl">
           {/* card bagian kanan about me */}
-          <div className="left w-full flex flex-col justify-center md:order-1 order-2 gap-5 p-6 bg-netral-225">
+          <div className="w-full flex flex-col justify-center md:order-1 order-2 gap-5 p-6 ">
             <LeftBar />
           </div>
           {/* card bagian kanan kirim email */}
