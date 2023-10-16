@@ -24,7 +24,7 @@ function LeftBar() {
       </div>
       <div className="flex items-center gap-3">
         <div className="border p-2 rounded-full text-blue-500 bg-white shadow-xl">
-          <HiMailOpen size="40" />
+          <IoLogoWhatsapp size="40" />
         </div>
         <div className="flex flex-col justify-start">
           <h1 className="font-bold text-xl text-start text-black">WhatsApp</h1>
