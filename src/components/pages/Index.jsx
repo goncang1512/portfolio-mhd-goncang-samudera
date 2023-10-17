@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 // CSS
 import "../../style/home.css";
+import "../../style/about.css";
+import "../../style/contact.css";
+import "../../style/project.css";
 
 // Import File
 import HomeLeft from "../layouts/homeLayouts/HomeLeft";
@@ -16,6 +19,7 @@ import LeftBar from "../layouts/contactLayouts/LeftBar";
 import Maps from "../layouts/contactLayouts/Maps";
 import CopyRight from "../layouts/CopyRight";
 
+// Import packages
 import AOS from "aos";
 import "aos/dist/aos.css";
 

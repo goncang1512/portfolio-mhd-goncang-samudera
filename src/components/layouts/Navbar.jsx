@@ -1,21 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import RouteLink from "../elements/navbar/RouteLink";
 
 function Navbar() {
-  useEffect(() => {
-    const menuToggle = document.querySelector(".hum-toggle input");
-    const navbarMenu = document.querySelector(".navbar-menu");
+  const [aktif, setAktif] = useState(false);
 
-    function handleClick() {
-      navbarMenu.classList.toggle("slide");
-    }
-
-    menuToggle.addEventListener("click", handleClick);
-
-    return () => {
-      menuToggle.removeEventListener("click", handleClick);
-    };
-  }, []);
+  function navClick(e) {
+    setAktif(e.target.checked);
+  }
 
   return (
     <>
@@ -23,7 +14,11 @@ function Navbar() {
         <div className="text-white flex items-center">
           <p className="navbar-name text-4xl text-black">Mhd. Goncang</p>
         </div>
-        <ul className="navbar-menu w-80 flex justify-evenly">
+        <ul
+          className={`navbar-menu w-80 flex justify-evenly ${
+            aktif ? "slide" : ""
+          }`}
+        >
           <RouteLink to="#home">Home</RouteLink>
           <RouteLink to="#about">About</RouteLink>
           <RouteLink to="#project">Project</RouteLink>
@@ -31,7 +26,12 @@ function Navbar() {
         </ul>
 
         <div className="hum-toggle md:hidden">
-          <input type="checkbox" id="checkbox" />
+          <input
+            type="checkbox"
+            id="checkbox"
+            checked={aktif}
+            onChange={navClick}
+          />
           <label for="checkbox" className="toggle-label">
             <div className="bars" id="bar1"></div>
             <div className="bars" id="bar2"></div>

@@ -1,9 +1,6 @@
 import "./App.css";
-import HomePage from "./components/pages/HomePage";
-import ProjectPage from "./components/pages/ProjectPage";
-import ContactPage from "./components/pages/ContactPage";
-import AboutSection from "./components/pages/AboutSection";
 import Index from "./components/pages/Index";
+import About from "./components/pages/about";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,11 +8,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/project" element={<ProjectPage />} />
-          <Route path="/about" element={<AboutSection />} />
-          <Route path="/contact" element={<ContactPage />} />
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>
