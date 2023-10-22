@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 // CSS
+import '../../App.css'
 import "../../style/home.css";
 import "../../style/about.css";
 import "../../style/contact.css";
