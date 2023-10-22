@@ -119,6 +119,7 @@ function LeftBar() {
         className="md:px-7 px-0 flex flex-col text-lg h-full justify-evenly items-center gap-5 w-full"
         ref={from}
         onSubmit={sendEmail}
+        method="onsubmit"
       >
         <InputFloat
           type="text"
