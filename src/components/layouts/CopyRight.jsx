@@ -17,7 +17,7 @@ function CopyRight() {
               className="icon-copy hover:scale-110 cursor-pointer text-white"
             />
           </a>
-          <a href="https://www.linkedin.com/in/mhd-goncang-samudera-nasution-7a523a292?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL6B8foHSRiynMKH%2F40%2Bg2Q%3D%3D">
+          <a href="https://www.linkedin.com/in/mhd-goncang-samudera-nasution-7a523a292/">
             <AiFillLinkedin
               size="27"
               className="icon-copy hover:scale-110 cursor-pointer text-white"

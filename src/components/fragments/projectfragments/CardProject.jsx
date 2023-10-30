@@ -43,11 +43,11 @@ const Figure = (props) => {
   const { img, classFigure, classImg } = props;
   return (
     <>
-      <figure className={`${classFigure} pr-4 my-5 ml-5`}>
+      <figure className={`${classFigure} pr-10 md:pr-4 my-5 ml-5 w-full`}>
         <img
           src={img}
           alt="Album"
-          className={`${classImg} md:w-575 w-full h-96 rounded-xl  object-cover border drop-shadow-md cursor-pointer ease-linear transition-all object-top hover:object-bottom`}
+          className={`${classImg} w-full h-96 rounded-xl  object-cover border drop-shadow-md cursor-pointer ease-linear transition-all object-top hover:object-bottom`}
         />
       </figure>
     </>
@@ -59,7 +59,7 @@ const Body = (props) => {
   const { children, classBody } = props;
   return (
     <div
-      className={`${classBody} flex flex-col justify-between md:h-96 h-full gap-7 p-5`}
+      className={`${classBody} flex flex-col justify-between items-center md:h-96 h-full gap-7 p-5 w-full`}
     >
       {children}
     </div>

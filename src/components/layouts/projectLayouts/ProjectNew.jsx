@@ -15,8 +15,7 @@ function ProjectNew() {
           <CardProject.Title>Ecommerce</CardProject.Title>
           <CardProject.Ception>
             Ini merupakan project untuk belajar feth API untuk saya dengan Fake
-            Store Api. Yang menggunakan Tailwind CSS dan daisyui. (belum
-            selesai)
+            Store Api. Yang menggunakan Tailwind CSS dan daisyui.
           </CardProject.Ception>
           <CardProject.Tech>
             <div className="border py-1 px-5 shadow-xl">TAILWIND CSS</div>
@@ -35,7 +34,7 @@ function ProjectNew() {
           <CardProject.Ception>
             Ini adalah sebuah proyek website kasir yang berguna untuk menghitung
             dan menerima pesanan makanan, namun hanya dapat digunakan di sisi
-            kasir. (belum selesai)
+            kasir. 
           </CardProject.Ception>
           <CardProject.Tech>
             <div className="border py-1 px-5 shadow-xl">REACT</div>
@@ -81,7 +80,7 @@ function ProjectNew() {
           <CardProject.Ception>
             Ini merupakan website yang saya buat untuk menyimpan komponen
             komponen website yang pernah saya gunakan sebelumya. Yang
-            menggunakan Tailwind CSS dan react. (belum selesai)
+            menggunakan Tailwind CSS dan react.
           </CardProject.Ception>
           <CardProject.Tech>
             <div className="border py-1 px-5 shadow-xl">REACT</div>
