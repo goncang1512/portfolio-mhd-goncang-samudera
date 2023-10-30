@@ -5,7 +5,7 @@ import Sosmed from "../../fragments/homeFragments/Sosmed";
 
 function HomeLeft() {
   return (
-    <div className="container-teks flex  flex-col">
+    <div className="md:pl-[20%] pl-0 flex  flex-col">
       <TeksAnimation />
       <div className="sosmed-home flex justify-start gap-6  my-5 items-center">
         <Sosmed />

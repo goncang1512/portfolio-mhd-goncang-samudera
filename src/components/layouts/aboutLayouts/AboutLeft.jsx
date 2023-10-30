@@ -19,7 +19,7 @@ function AboutLeft() {
           alt=""
           className={`${
             isHovered ? "hover-rotation" : "image-rotation"
-          } bg-netral-225 absolute rounded-full ease-in-out`}
+          } bg-white absolute rounded-full ease-in-out`}
         />
         <div
           className="icon-arrow text-black absolute"

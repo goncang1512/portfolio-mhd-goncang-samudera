@@ -11,7 +11,7 @@ function Sosmed() {
       <SosmedEl
         src="../../assets/svg/icons8-linkedin.svg"
         link="https://www.linkedin.com/in/mhd-goncang-samudera-nasution-7a523a292/"
-        className="w-10"
+        className="w-[42px]"
       />
         <SosmedEl
           src="../../assets/svg/github-icon.svg"
