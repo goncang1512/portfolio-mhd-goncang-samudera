@@ -12,6 +12,38 @@
   }
 }
 
+.tailwindCss:before {
+  content: 'TAILWIND CSS';
+}
+
+.daisyUi:before {
+  content: 'DAISY UI';
+}
+
+.reactBootstrap:before {
+  content: 'REACT BOOTSTRAP';
+}
+
+.teknologi:before {
+  position: absolute;
+  background-color: #147efb;
+  height: 0px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+}
+
+.teknologi:hover:before {
+  height: 100%;
+}
+
 @keyframes rotateBack {
   from {
     transform: rotate(-180deg);

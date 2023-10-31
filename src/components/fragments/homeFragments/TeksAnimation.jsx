@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 function TeksAnimation() {
   const [text] = useTypewriter({
     words:['developer', 'programmer', 'front-end', 'web development', 'gamer'],
-    loop: 1
+    loop: 0
   })
 
   return (

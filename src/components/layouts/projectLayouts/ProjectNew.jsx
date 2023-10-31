@@ -18,8 +18,8 @@ function ProjectNew() {
             Store Api. Yang menggunakan Tailwind CSS dan daisyui.
           </CardProject.Ception>
           <CardProject.Tech>
-            <div className="border py-1 px-5 shadow-xl">TAILWIND CSS</div>
-            <div className="border py-1 px-5 shadow-xl">DAISY UI</div>
+            <div className='teknologi tailwindCss border py-1 px-5 shadow-xl relative'>TAILWIND CSS</div>
+            <div className="teknologi daisyUi border py-1 px-5 shadow-xl relative">DAISY UI</div>
           </CardProject.Tech>
           <CardProject.Button
             demo="https://eccomerce-store-wse.netlify.app"
@@ -37,8 +37,8 @@ function ProjectNew() {
             kasir. 
           </CardProject.Ception>
           <CardProject.Tech>
-            <div className="border py-1 px-5 shadow-xl">REACT</div>
-            <div className="border py-1 px-5 shadow-xl">REACT BOOTSTRAP</div>
+            <div className="teknologi before:content-['REACT'] border py-1 px-5 shadow-xl relative">REACT</div>
+            <div className="teknologi reactBootstrap border py-1 px-5 shadow-xl relative">REACT BOOTSTRAP</div>
           </CardProject.Tech>
           <CardProject.Button
             demo="https://web-kasir-mhdgoncang.netlify.app/"
@@ -65,7 +65,7 @@ function ProjectNew() {
             murni.
           </CardProject.Ception>
           <CardProject.Tech>
-            <div className="border py-1 px-5 shadow-xl">REACT</div>
+            <div className="teknologi before:content-['REACT'] border py-1 px-5 shadow-xl relative">REACT</div>
           </CardProject.Tech>
           <CardProject.Button
             linkGit="https://github.com/goncang1512/portfolio-mhdgoncang"
@@ -83,8 +83,8 @@ function ProjectNew() {
             menggunakan Tailwind CSS dan react.
           </CardProject.Ception>
           <CardProject.Tech>
-            <div className="border py-1 px-5 shadow-xl">REACT</div>
-            <div className="border py-1 px-5 shadow-xl">TAILWIND CSS</div>
+            <div className="teknologi before:content-['REACT'] border py-1 px-5 shadow-xl relative">REACT</div>
+            <div className="teknologi tailwindCss border py-1 px-5 shadow-xl relative">TAILWIND CSS</div>
           </CardProject.Tech>
           <CardProject.Button
             demo="https://library-goncang.netlify.app/"
