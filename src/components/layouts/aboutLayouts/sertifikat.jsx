@@ -1,6 +1,6 @@
 import React from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
+import { Carousel } from 'react-responsive-carousel'
 import dicodingImg from '../../../../public/assets/imgSertifikat/javascript-kursus.jpg'
 import camp404Img from '../../../../public/assets/imgSertifikat/webprogramming-kursus.jpg'
 
