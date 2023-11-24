@@ -9,7 +9,7 @@ export default function Sertifikat() {
         <div className='pt-10 flex flex-col gap-3'>
             <h1 className="text-3xl text-black">Sertifikat</h1>
             <div className='flex justify-center w-full'>
-                <Carousel autoPlay={true} interval={4000} infiniteLoop={true} showStatus={false} className='md:w-[75%] h-auto w-full text-center flex justify-center items-center flex-col'>
+                <Carousel autoPlay={true} interval={4000} infiniteLoop={true} showStatus={false} className='md:w-[55%] w-full text-center flex justify-center items-center flex-col'>
                     <div className='border'>
                         <img src={dicodingImg} alt='sertifikat'/>
                     </div>
