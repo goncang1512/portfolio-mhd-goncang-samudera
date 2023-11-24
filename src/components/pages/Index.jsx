@@ -19,6 +19,7 @@ import RightBar from "../layouts/contactLayouts/RightBar";
 import LeftBar from "../layouts/contactLayouts/LeftBar";
 import Maps from "../layouts/contactLayouts/Maps";
 import CopyRight from "../layouts/CopyRight";
+import Sertifikat from "../layouts/aboutLayouts/sertifikat";
 
 // Import packages
 import AOS from "aos";
@@ -73,6 +74,9 @@ export default function Index() {
         </div>
         <div className="md:pt-20 pt-9 md:pb-0 pb-9">
           <TeachSkill />
+        </div>
+        <div data-aos="fade-down">
+          <Sertifikat/>
         </div>
       </section>
 
