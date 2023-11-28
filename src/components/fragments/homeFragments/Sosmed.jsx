@@ -17,10 +17,6 @@ function Sosmed() {
           src="../../assets/svg/github-icon.svg"
           link="https://github.com/goncang1512"
         />
-      <SosmedEl
-        src="../../assets/svg/twitter-icon.svg"
-        link="https://twitter.com/GoncangSamudera?t=kiEKN6_OJkDoynL4AuffSg&s=09"
-      />
     </>
   );
 }
