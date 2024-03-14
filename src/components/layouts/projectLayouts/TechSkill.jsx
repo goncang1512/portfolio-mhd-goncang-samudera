@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import IconSkill from "../../fragments/projectfragments/IconSkill";
 import CardProject from "../../fragments/projectfragments/CardProject";
 import AOS from "aos";
@@ -11,10 +11,9 @@ function TechSkill() {
   return (
     <div className="flex flex-col gap-5" data-aos="fade-down">
       <CardProject.ProTitle>Tech Stack</CardProject.ProTitle>
-      <div className="flex gap-10 md:flex-row flex-col">
-        <div className="border border-black rounded-lg p-5">
-          <h1 className="text-xl">Languages</h1>
-          <div className="flex w-full flex-wrap justify-evenly mt-5 gap-10">
+      <div className="flex flex-col gap-10 md:flex-row">
+        <div className="p-5 border border-black rounded-lg">
+          <div className="flex flex-wrap w-full gap-10 mt-5 justify-evenly">
             <IconSkill
               src="../../assets/svg/html-icon.svg"
               alt="HTML"
@@ -30,15 +29,15 @@ function TechSkill() {
               alt="JavaScript"
               title="Java Script"
             />
-          </div>
-        </div>
-        <div className="border border-black rounded-lg p-5">
-          <h1 className="text-xl">Front End</h1>
-          <div className="flex w-full flex-wrap justify-evenly mt-5 gap-10">
             <IconSkill
               src="../../assets/svg/react-js-icon.svg"
               alt="React JS"
               title="React"
+            />
+            <IconSkill
+              src="../../assets/svg/next-js.svg"
+              alt="React JS"
+              title="Next JS"
             />
             <IconSkill
               src="../../assets/svg/bootstrap-icon.svg"
@@ -49,6 +48,16 @@ function TechSkill() {
               src="../../assets/svg/tailwind-icon.svg"
               alt="Tailwind"
               title="Tailwind CSS"
+            />
+            <IconSkill
+              src="../../assets/svg/node-js-icon.svg"
+              alt="React JS"
+              title="Node JS"
+            />
+            <IconSkill
+              src="../../assets/svg/express-js.svg"
+              alt="React JS"
+              title="Express JS"
             />
           </div>
         </div>

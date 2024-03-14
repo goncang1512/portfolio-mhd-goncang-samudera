@@ -2,7 +2,7 @@
 .foto-profil {
   margin: 100px 50px 50px 50px;
   animation: morph 9s ease-in-out infinite;
-  background-image: url("../../public/assets/img/foto-profil-2.jpg");
+  background-image: url("/assets/img/foto-profil-2.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;

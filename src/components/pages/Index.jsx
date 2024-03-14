@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 // CSS
-import '../../App.css'
+import "../../App.css";
 import "../../style/home.css";
 import "../../style/about.css";
 import "../../style/contact.css";
@@ -37,7 +37,7 @@ export default function Index() {
 
       {/* Bagian Home */}
       <section
-        className="flex h-screen md:flex-row flex-col items-center"
+        className="flex flex-col items-center h-screen md:flex-row"
         id="home"
       >
         <div
@@ -47,7 +47,7 @@ export default function Index() {
           <HomeLeft />
         </div>
         <div
-          className="md:order-2 order-1 flex w-full justify-center h-screen items-center md:mt-0 mt-100px"
+          className="flex items-center justify-center order-1 w-full h-screen md:order-2 md:mt-0 mt-100px"
           data-aos="zoom-in"
         >
           <HomeRight />
@@ -59,16 +59,16 @@ export default function Index() {
         className="container flex flex-col w-screen h-full pt-20"
         id="about"
       >
-        <div className="about-container flex md:flex-row flex-col">
+        <div className="flex flex-col about-container md:flex-row">
           {/* card bagian kanan about me */}
           <div
-            className="w-full flex items-center justify-start"
+            className="flex items-center justify-start w-full"
             data-aos="zoom-in"
           >
             <AboutLeft />
           </div>
           {/* card bagian kanan untuk memperkenalkan diri */}
-          <div className="about-right w-full" data-aos="fade-down">
+          <div className="w-full about-right" data-aos="fade-down">
             <AboutRight />
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function Index() {
           <TeachSkill />
         </div>
         <div data-aos="fade-down">
-          <Sertifikat/>
+          <Sertifikat />
         </div>
       </section>
 
@@ -87,17 +87,17 @@ export default function Index() {
 
       {/* Bagian Contact */}
       <section
-        className="container pb-10 pt-20"
+        className="container pt-20 pb-10"
         id="contact"
         data-aos="fade-down"
       >
-        <div className="card-container flex md:flex-row flex-col border rounded-xl shadow-xl">
+        <div className="flex flex-col border shadow-xl card-container md:flex-row rounded-xl">
           {/* card bagian kanan about me */}
-          <div className="w-full flex flex-col justify-center md:order-1 order-2 gap-5 p-6 ">
+          <div className="flex flex-col justify-center order-2 w-full gap-5 p-6 md:order-1 ">
             <LeftBar />
           </div>
           {/* card bagian kanan kirim email */}
-          <div className="right flex flex-col items-center justify-center  h-full w-full md:order-2 p-6 order-1 bg-white">
+          <div className="flex flex-col items-center justify-center order-1 w-full h-full p-6 bg-white right md:order-2">
             <RightBar />
           </div>
         </div>

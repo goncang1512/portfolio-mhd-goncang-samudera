@@ -1,12 +1,10 @@
-import React from "react";
-
-function IconSkill(props) {
-  const { src, alt, title } = props;
+// eslint-disable-next-line react/prop-types
+function IconSkill({ src, alt, title }) {
   return (
     <>
       <div className="flex items-center">
         <img
-          className="icon-skill cursor-pointer w-8 grayscale brightness-75 hover:filter-none"
+          className="w-8 cursor-pointer icon-skill grayscale brightness-75 hover:filter-none"
           src={src}
           alt={alt}
           title={title}

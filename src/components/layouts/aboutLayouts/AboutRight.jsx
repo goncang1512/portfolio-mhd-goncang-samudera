@@ -1,5 +1,3 @@
-import React from "react";
-
 function AboutRight() {
   return (
     <div className="text-container">
