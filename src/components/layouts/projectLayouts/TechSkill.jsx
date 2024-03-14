@@ -30,6 +30,11 @@ function TechSkill() {
               title="Java Script"
             />
             <IconSkill
+              src="../../assets/svg/typescript.svg"
+              alt="JavaScript"
+              title="TypeScript"
+            />
+            <IconSkill
               src="../../assets/svg/react-js-icon.svg"
               alt="React JS"
               title="React"
