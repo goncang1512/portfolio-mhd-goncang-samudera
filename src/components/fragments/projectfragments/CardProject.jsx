@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+/* eslint-disable react/prop-types */
+import { useEffect } from "react";
 import LinkDemo from "../../elements/projectelements/LinkDemo";
 import { AiFillGithub } from "react-icons/ai";
 import { RiShareBoxFill } from "react-icons/ri";
@@ -6,20 +7,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Card container
-function CardProject(props) {
+function CardProject({ children, dataAos }) {
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);
 
-  const { children, dataAos } = props;
   return (
     <div
-      className="bg-white mt-5 flex rounded-xl w-full"
+      className="flex w-full mt-5 bg-white rounded-xl"
       data-aos={dataAos}
       data-aos-easing="ease-out"
     >
       <div className="w-full">
-        <div className="flex md:flex-row flex-col rounded-xl bg-white border shadow-xl">
+        <div className="flex flex-col bg-white border shadow-xl md:flex-row rounded-xl">
           {children}
         </div>
       </div>
@@ -70,7 +70,7 @@ const Body = (props) => {
 const Title = (props) => {
   const { children, classTitle, classJudul } = props;
   return (
-    <div classname={`${classJudul}`}>
+    <div className={`${classJudul}`}>
       <h2 className={`${classTitle} font-bold text-center text-xl`}>
         {children}
       </h2>
@@ -83,7 +83,7 @@ const Ception = (props) => {
   const { children } = props;
   return (
     <>
-      <p className="md:w-80 w-full text-gray-500 text-center text-md">
+      <p className="w-full text-center text-gray-500 md:w-80 text-md">
         {children}
       </p>
     </>
@@ -94,7 +94,7 @@ const Ception = (props) => {
 const Tech = (props) => {
   const { children } = props;
   return (
-    <div className="flex justify-center flex-wrap gap-5 w-full">{children}</div>
+    <div className="flex flex-wrap justify-center w-full gap-5">{children}</div>
   );
 };
 
@@ -102,13 +102,19 @@ const Tech = (props) => {
 const Button = (props) => {
   const { linkGit, demo } = props;
   return (
-    <div className="flex justify-center items-center gap-5 mt-5">
-      <LinkDemo link={linkGit}>
-        Code <AiFillGithub size="30" />
-      </LinkDemo>
-      <LinkDemo link={demo}>
-        Live Demo <RiShareBoxFill size="30" />
-      </LinkDemo>
+    <div className="flex items-center justify-center gap-5 mt-5">
+      {/* Tambahkan kondisi untuk menampilkan tombol Code */}
+      {linkGit && (
+        <LinkDemo link={linkGit}>
+          Code <AiFillGithub size="30" />
+        </LinkDemo>
+      )}
+      {/* Tambahkan kondisi untuk menampilkan tombol Live Demo */}
+      {demo && (
+        <LinkDemo link={demo}>
+          Live Demo <RiShareBoxFill size="30" />
+        </LinkDemo>
+      )}
     </div>
   );
 };

@@ -15,13 +15,13 @@ export default function Sertifikat() {
         >
           <div className="border">
             <img
-              src="/src/assets/sertifikat/javascript-kursus.jpg"
+              src="/assets/sertifikat/javascript-kursus.jpg"
               alt="sertifikat"
             />
           </div>
           <div className="border">
             <img
-              src="/src/assets/sertifikat/webprogramming-kursus.jpg"
+              src="/assets/sertifikat/webprogramming-kursus.jpg"
               alt="sertifikat"
             />
           </div>

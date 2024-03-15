@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import RouteLink from "../elements/navbar/RouteLink";
 
 function Navbar() {
@@ -10,9 +10,9 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar-top bg-white shadow-md h-16 w-screen flex justify-between items-center fixed">
-        <div className="text-white flex items-center">
-          <p className="navbar-name text-4xl text-black">Mhd. Goncang</p>
+      <div className="fixed flex items-center justify-between w-screen h-16 bg-white shadow-md navbar-top">
+        <div className="flex items-center text-white">
+          <p className="text-4xl text-black navbar-name">Mhd. Goncang</p>
         </div>
         <ul
           className={`navbar-menu w-80 flex justify-evenly ${
@@ -32,7 +32,7 @@ function Navbar() {
             checked={aktif}
             onChange={navClick}
           />
-          <label for="checkbox" className="toggle-label">
+          <label htmlFor="checkbox" className="toggle-label">
             <div className="bars" id="bar1"></div>
             <div className="bars" id="bar2"></div>
             <div className="bars" id="bar3"></div>
