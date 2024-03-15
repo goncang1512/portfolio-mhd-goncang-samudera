@@ -1,11 +1,10 @@
-import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function TeksAnimation() {
   const [text] = useTypewriter({
-    words:['developer', 'programmer', 'front-end', 'web development', 'gamer'],
-    loop: 0
-  })
+    words: ["developer", "programmer", "front-end", "web development", "gamer"],
+    loop: 0,
+  });
 
   return (
     <>
@@ -13,7 +12,8 @@ function TeksAnimation() {
         Mhd. Goncang Samudera Nasution
       </h1>
       <div className="text-xl font-semibold text-black">
-        I'm a <span className="text-[#147efb]">{text}</span><Cursor/>
+        I&apos;m a <span className="text-[#147efb]">{text}</span>
+        <Cursor />
       </div>
     </>
   );
