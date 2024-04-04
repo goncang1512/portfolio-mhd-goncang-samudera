@@ -35,13 +35,13 @@ export default function Index() {
         id="home"
       >
         <div
-          className="md:order-1 order-2 w-full h-full items-center flex xm-full md:mt-0 mt-[50px] px-3"
+          className="flex items-center order-2 w-full h-full px-3 md:order-1 xm-full"
           data-aos="fade-right"
         >
           <HomeLeft />
         </div>
         <div
-          className="flex items-center justify-center order-1 w-full h-screen md:order-2"
+          className="flex items-center justify-center order-1 w-full h-screen pt-20 md:order-2 md:pt-0"
           data-aos="zoom-in"
         >
           <HomeRight />
@@ -50,10 +50,10 @@ export default function Index() {
 
       {/* Bagian About */}
       <section
-        className="container flex flex-col w-screen h-full md:pt-20 pt-[100px]"
+        className="container flex flex-col w-screen h-full pt-[200000px]"
         id="about"
       >
-        <div className="flex flex-col about-container md:flex-row">
+        <div className="flex flex-col pt-20 about-container md:flex-row">
           {/* card bagian kanan about me */}
           <div
             className="flex items-center justify-start w-full"
@@ -76,27 +76,27 @@ export default function Index() {
 
       {/* Bagian Project */}
       <section className="container flex flex-col pt-20" id="project">
-        <ProjectNew />
+        <div className="pt-20">
+          <ProjectNew />
+        </div>
       </section>
 
       {/* Bagian Contact */}
-      <section
-        className="container pt-20 pb-10"
-        id="contact"
-        data-aos="fade-down"
-      >
-        <div className="flex flex-col border shadow-xl card-container md:flex-row rounded-xl">
-          {/* card bagian kanan about me */}
-          <div className="flex flex-col justify-center order-2 w-full gap-5 p-6 md:order-1 ">
-            <LeftBar />
+      <section className="container" id="contact" data-aos="fade-down">
+        <div className="pt-20">
+          <div className="flex flex-col border shadow-xl card-container md:flex-row rounded-xl">
+            {/* card bagian kanan about me */}
+            <div className="flex flex-col justify-center order-2 w-full gap-5 p-6 md:order-1 ">
+              <LeftBar />
+            </div>
+            {/* card bagian kanan kirim email */}
+            <div className="order-1 w-full h-full p-6 bg-white right md:order-2">
+              <RightBar />
+            </div>
           </div>
-          {/* card bagian kanan kirim email */}
-          <div className="order-1 w-full h-full p-6 bg-white right md:order-2">
-            <RightBar />
+          <div className="w-full pt-10">
+            <Maps />
           </div>
-        </div>
-        <div className="w-full pt-10">
-          <Maps />
         </div>
       </section>
     </div>
