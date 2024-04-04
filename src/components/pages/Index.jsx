@@ -10,7 +10,6 @@ import "../../style/project.css";
 // Import File
 import HomeLeft from "../layouts/homeLayouts/HomeLeft";
 import ProjectNew from "../layouts/projectLayouts/ProjectNew";
-import Navbar from "../layouts/Navbar";
 import HomeRight from "../layouts/homeLayouts/HomeRight";
 import AboutLeft from "../layouts/aboutLayouts/AboutLeft";
 import AboutRight from "../layouts/aboutLayouts/AboutRight";
@@ -18,7 +17,6 @@ import TeachSkill from "../layouts/projectLayouts/TechSkill";
 import RightBar from "../layouts/contactLayouts/RightBar";
 import LeftBar from "../layouts/contactLayouts/LeftBar";
 import Maps from "../layouts/contactLayouts/Maps";
-import CopyRight from "../layouts/CopyRight";
 import Sertifikat from "../layouts/aboutLayouts/sertifikat";
 
 // Import packages
@@ -31,10 +29,6 @@ export default function Index() {
   });
   return (
     <div className="overflow-x-hidden">
-      <nav>
-        <Navbar />
-      </nav>
-
       {/* Bagian Home */}
       <section
         className="flex flex-col items-center h-screen md:flex-row"
@@ -47,7 +41,7 @@ export default function Index() {
           <HomeLeft />
         </div>
         <div
-          className="flex items-center justify-center order-1 w-full h-screen md:order-2 md:mt-0 mt-100px"
+          className="flex items-center justify-center order-1 w-full h-screen md:order-2"
           data-aos="zoom-in"
         >
           <HomeRight />
@@ -56,7 +50,7 @@ export default function Index() {
 
       {/* Bagian About */}
       <section
-        className="container flex flex-col w-screen h-full pt-20"
+        className="container flex flex-col w-screen h-full md:pt-20 pt-[100px]"
         id="about"
       >
         <div className="flex flex-col about-container md:flex-row">
@@ -97,7 +91,7 @@ export default function Index() {
             <LeftBar />
           </div>
           {/* card bagian kanan kirim email */}
-          <div className="flex flex-col items-center justify-center order-1 w-full h-full p-6 bg-white right md:order-2">
+          <div className="order-1 w-full h-full p-6 bg-white right md:order-2">
             <RightBar />
           </div>
         </div>
@@ -105,11 +99,6 @@ export default function Index() {
           <Maps />
         </div>
       </section>
-
-      {/* Bagian footer / akhir website */}
-      <footer id="footer">
-        <CopyRight />
-      </footer>
     </div>
   );
 }

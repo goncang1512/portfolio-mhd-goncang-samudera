@@ -1,0 +1,51 @@
+[
+  {
+    "id": 0,
+    "title": "Mading Online",
+    "img": "../../assets/img/madingonline-project.png",
+    "ception": "Ini merupakan project yang saya kerjakan sendiri yang di bangun menggunakan bahasa Typescript dan sudah menggunakan frontend dan backend. Project ini bernama mading online dimana orang-orang bisa upload content dan pengumuman layaknya mading. Tapi ini merupakan mading yang dapat di lihat oleh semua orang.",
+    "stack": ["TAILWIND CSS", "DAISY UI", "NEXT JS", "EXPRESS JS", "MONGO DB"],
+    "demo": "https://madingonline.vercel.app",
+    "duration": "duration-500"
+  },
+  {
+    "id": 1,
+    "title": "Eccomerce",
+    "img": "../../assets/img/Store-page.jpg",
+    "ception": "Ini merupakan project untuk belajar feth API untuk saya dengan Fake Store Api. Yang menggunakan Tailwind CSS dan daisyui.",
+    "stack": ["TAILWIND CSS", "DAISY UI"],
+    "demo": "https://eccomerce-store-wse.netlify.app",
+    "github": "https://github.com/goncang1512/ecommerce-project",
+    "duration": "duration-20000"
+  },
+  {
+    "id": 2,
+    "title": "Web Kasir",
+    "img": "../../assets/img/project-web-kasir.jpg",
+    "ception": "Ini adalah sebuah proyek website kasir yang berguna untuk menghitung dan menerima pesanan makanan, namun hanya dapat digunakan di sisi kasir.",
+    "stack": ["REACT", "REACT BOOTSTRAP"],
+    "demo": "https://web-kasir-mhdgoncang.netlify.app/",
+    "github": "https://github.com/goncang1512/website-kasir",
+    "duration": "duration-12000"
+  },
+  {
+    "id": 3,
+    "title": "Portfolio Pribadi",
+    "img": "../../assets/img/Portfolio-old.jpg",
+    "ception": "Ini merupakan project portfolio pertama saya menggunakan react js dan tidak menggunakan css framework. Ini semua menggunakan css murni.",
+    "stack": ["REACT"],
+    "demo": "https://portfolio-mhdgoncang-f593c6.netlify.app/",
+    "github": "https://github.com/goncang1512/portfolio-mhdgoncang",
+    "duration": "duration-14000"
+  },
+  {
+    "id": 4,
+    "title": "Library Komponen",
+    "img": "../../assets/img/Library-web.jpg",
+    "ception": "Ini merupakan website yang saya buat untuk menyimpan komponen komponen website yang pernah saya gunakan sebelumya. Yang menggunakan Tailwind CSS dan react.",
+    "stack": ["REACT", "TAILWIND CSS"],
+    "demo": "https://library-goncang.netlify.app/",
+    "github": "https://github.com/goncang1512/library-goncang",
+    "duration": "duration-16000"
+  }
+]

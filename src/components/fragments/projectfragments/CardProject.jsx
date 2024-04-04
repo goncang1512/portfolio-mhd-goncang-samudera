@@ -47,7 +47,7 @@ const Figure = (props) => {
         <img
           src={img}
           alt="Album"
-          className={`${classImg} w-full h-96 rounded-xl  object-cover border drop-shadow-md cursor-pointer ease-linear transition-all object-top hover:object-bottom`}
+          className={`${classImg} w-full h-96 rounded-xl  object-cover border drop-shadow-md cursor-pointer linear transition-all object-top hover:object-bottom`}
         />
       </figure>
     </>
@@ -83,7 +83,7 @@ const Ception = (props) => {
   const { children } = props;
   return (
     <>
-      <p className="w-full text-center text-gray-500 md:w-80 text-md">
+      <p className="w-full text-center text-gray-500 md:w-full text-md">
         {children}
       </p>
     </>

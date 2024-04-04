@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+
 .card-body-container {
   margin: 9rem 10rem 7rem 10rem;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -26,14 +26,16 @@ input[type="number"]::-webkit-outer-spin-button {
 .did-floating-input {
   outline: 1px solid #027789;
   box-sizing: border-box;
-  &:focus {
-    outline: 1px solid #00b4cf;
-    ~ .did-floating-label {
-      top: -15px;
-      font-size: 16px;
-      color: #00b4cf;
-    }
-  }
+}
+
+.did-floating-input:focus {
+  outline: 1px solid #00b4cf;
+}
+
+.did-floating-input:focus ~ .did-floating-label {
+  top: -15px;
+  font-size: 16px;
+  color: #00b4cf;
 }
 
 .did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
@@ -48,14 +50,16 @@ input[type="number"]::-webkit-outer-spin-button {
   max-height: 180px;
   min-height: 45px;
   box-sizing: border-box;
-  &:focus {
-    outline: 1px solid #00b4cf;
-    ~ .label-floating {
-      top: -15px;
-      font-size: 16px;
-      color: #00b4cf;
-    }
-  }
+}
+
+.text-area:focus {
+  outline: 1px solid #00b4cf;
+}
+
+.text-area:focus ~ .label-floating {
+  top: -15px;
+  font-size: 16px;
+  color: #00b4cf;
 }
 
 .text-area:not(:placeholder-shown) ~ .label-floating {

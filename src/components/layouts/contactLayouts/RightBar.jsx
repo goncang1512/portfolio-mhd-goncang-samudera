@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import InputFloat from "../../elements/contactelements/InputFloat";
 import TextFloat from "../../elements/contactelements/TextareFloat";
@@ -51,14 +51,14 @@ function LeftBar() {
       <>
         {showModal && (
           <dialog className="modal" open>
-            <form method="dialog" className="modal-box  bg-green-500">
+            <form method="dialog" className="bg-green-500 modal-box">
               <button
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-red-500 hover:bg-slate-800 text-lg font-bold"
+                className="absolute text-lg font-bold text-red-500 btn btn-sm btn-circle btn-ghost right-2 top-2 hover:bg-slate-800"
                 onClick={closeModal}
               >
                 ✕
               </button>
-              <h3 className="font-bold text-lg">Pesan berhasil di kirim!</h3>
+              <h3 className="text-lg font-bold">Pesan berhasil di kirim!</h3>
               <p className="py-4">
                 Pesan berhasil di kirim ke Goncang Samudera
               </p>
@@ -85,14 +85,14 @@ function LeftBar() {
       <>
         {showFail && (
           <dialog className="modal" open>
-            <form method="dialog" className="modal-box  bg-red-400">
+            <form method="dialog" className="bg-red-400 modal-box">
               <button
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-black hover:bg-white text-lg font-bold"
+                className="absolute text-lg font-bold text-black btn btn-sm btn-circle btn-ghost right-2 top-2 hover:bg-white"
                 onClick={closeModal}
               >
                 ✕
               </button>
-              <h3 className="font-bold text-lg text-black">
+              <h3 className="text-lg font-bold text-black">
                 Pesan gagal di kirim!
               </h3>
               <p className="py-4 text-black">
@@ -111,12 +111,12 @@ function LeftBar() {
   };
 
   return (
-    <>
+    <div className="flex flex-col items-center justify-center w-full">
       {modalPesan()}
       {modalFail()}
-      <h2 className="text-2xl text-black font-bold mb-3">Kirim Pesan</h2>
+      <h2 className="mb-3 text-2xl font-bold text-black">Kirim Pesan</h2>
       <form
-        className="md:px-7 px-0 flex flex-col text-lg h-full justify-evenly items-center gap-5 w-full"
+        className="flex flex-col items-center w-full h-full gap-5 px-0 text-lg md:px-7 justify-evenly"
         ref={from}
         onSubmit={sendEmail}
         method="onsubmit"
@@ -158,12 +158,12 @@ function LeftBar() {
         <button
           type="submit"
           value="Send"
-          className="bg-blue-400 text-white py-2 w-5/12 rounded-full hover:bg-blue-500"
+          className="w-5/12 py-2 text-white bg-blue-400 rounded-full hover:bg-blue-500"
         >
           Kirim
         </button>
       </form>
-    </>
+    </div>
   );
 }
 

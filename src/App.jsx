@@ -1,18 +1,20 @@
 import "./App.css";
-import Index from "./components/pages/Index";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path:'/',
-    element: <Index/>
-  }
-])
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/layouts/Navbar";
+import CopyRight from "./components/layouts/CopyRight";
 
 function App() {
   return (
     <>
-      <RouterProvider router={router}/>
+      <nav>
+        <Navbar />
+      </nav>
+      <div className="pt-20 md:pt-0">
+        <Outlet />
+      </div>
+      <footer id="footer" className="pt-5">
+        <CopyRight />
+      </footer>
     </>
   );
 }

@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       transitionDuration: {
+        20000: "20000ms",
+        16000: "16000ms",
         14000: "14000ms",
+        13000: "13000ms",
         12000: "12000ms",
         6000: "6000ms",
       },
@@ -19,6 +22,7 @@ export default {
       },
     },
   },
+  // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
   daisyui: {
     themes: false,
